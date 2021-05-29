@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Our website description">
+    <meta name="keywords" content="html,css,form,pseudo classes">
+    <meta name="author" content="kristina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <section>
+      <div class="wraper-box">
+        <div class="box">
+          <p class="test">test</p>
+        </div>
+        <div class="box">
+          <p class="test">test</p>
+        </div>
+        <div class="box">
+          <p class="test">test</p>
+        </div>
+        <div class="box">
+          <p class="test">test</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+        <h2>Form</h2>
+        <form class="form-box" action="">
+            <div class="form-wraper">
+                <label for="fname">Fisrt Name</label>
+                <input class="input-wraper" type="text" id="fname" name="fisrtname" placeholder="Enter Your Name.." required>
+            </div>
+           
+            <div class="form-wraper">
+                <label for="passw">Password</label>
+                <input class="input-wraper" type="password" id="passw" name="password" placeholder="Enter Your Password.." required>
+            </div>
+
+            <div class="form-wraper">
+                <label>Your Message</label>
+                <textarea class="textarea-wraper" name="" id="" placeholder="Enter Your review..."></textarea>
+            </div>
+
+            <div>
+                <div>
+                    <input type="radio" id="age1" name="age">
+                    <label for="age1"> 18 - 35</label>
+                </div>
+                <div>
+                    <input type="radio" id="age2" name="age">
+                    <label for="age2"> 35 - 55</label>
+                </div>           
+            </div>
+
+            <div>
+                <div>
+                    <input type="checkbox" id="dance" name="hobbydance">
+                    <label for="dance"> Dance</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="music" name="hobbymuisc">
+                    <label for="music"> Music</label>
+                </div>           
+            </div>
+
+            <button class="button-wraper" type="submit"> Send </button>
+        </form>
+    </section>
+  </body>
+</html>

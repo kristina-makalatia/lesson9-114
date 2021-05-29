@@ -1,0 +1,102 @@
+/* pseudo classes */
+.box {
+    margin-right: 30px;
+}
+.wraper-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 300px;
+    background-color: lightseagreen;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.box:first-child{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.box:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.box:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+.box:last-child {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin-right: 0;
+}
+/* .box:nth-child(even) {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+.box:nth-child(odd) {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+} */
+
+.box:nth-child(2) .test{
+    color: #fff;
+}
+
+
+/* form elements */
+.form-wraper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.form-box {
+    max-width: 700px;
+    width:100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.input-wraper {
+    height: 45px;
+    margin-top: 15px;
+    color: red;
+    font-size: 20px;
+    /* border: none;
+    border-bottom: 2px solid green; */
+    border-radius: 35px;
+    /* background-color: lime; */
+}
+.input-wraper::placeholder,
+.textarea-wraper::placeholder{
+    color: blue;
+    font-size: 16px;
+}
+.input-wraper:focus,
+.textarea-wraper:focus {
+    outline: none;
+}
+/* .input-wraper[type=text] {
+    background-color: red;
+} */
+/* #fname {
+
+} */
+.textarea-wraper {
+    height: 200px;
+    resize: none;
+    margin-top: 15px;
+    color: red;
+    font-size: 20px;
+}
+.button-wraper {
+    width: 200px;
+    height: 45px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
